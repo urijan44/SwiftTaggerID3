@@ -22,10 +22,12 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/NCrusher74/SwiftLanguageAndLocaleCodes",
-            from: "2.0.0"),
+            from: "2.0.0"
+        ),
         .package(
-            url: "https://github.com/NCrusher74/SwiftConvenienceExtensions",
-            from: "2.0.0"),
+            url: "https://github.com/urijan44/SwiftConvenienceExtensions",
+            .branch("fix/vision_os_support")
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
